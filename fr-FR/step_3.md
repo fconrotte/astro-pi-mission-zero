@@ -7,7 +7,7 @@ Ouvre [l'émulateur Sense HAT](https://trinket.io/mission-zero){:target="_blank"
 Tu vas constater que trois lignes de code ont été ajoutées automatiquement :
 
 ```python
-from timpe import sleep
+from time import sleep
 from sense_hat import SenseHat
 sense = SenseHat()
 sense.set_rotation(270)
