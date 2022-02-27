@@ -1,4 +1,5 @@
 ---
+title: 3 Mesurer humidité
 hide:
   - toc
 ---
@@ -46,3 +47,10 @@ Le vrai Astro Pi mesurera l'humidité autour de lui, mais tu peux déplacer le c
 ![Une capture d'écran étiquetée de l'émulateur Sense HAT avec la fenêtre de code à gauche et l'émulateur à droite. Le curseur utilisé pour régler l'humidité est encerclé dans le coin supérieur droit](images/humidity-slider.png)
 
 **Remarque :** Tu te demandes peut-être pourquoi le curseur d'humidité affiche l'humidité sous forme d'un nombre entier, mais le résultat de la mesure que tu obtiens est en décimales. L'émulateur simule la légère imprécision du capteur réel, de sorte que le résultat de la mesure de l'humidité que tu vois peut être très légèrement supérieure ou inférieure à la valeur que tu as définie avec le curseur.
+
+## Envoyer votre programme dans l'espace
+
+A ce stade vous avez atteint le minimum nécessaire pour pouvoir envoyer votre programme dans la Station Spatiale Internationale.
+
+Vous pouvez continuer à [l'étage suivante](4-Ajouter de la couleur.md) ou aller directement à [l'étape finale](7-Soumettre ton programme.md)
+

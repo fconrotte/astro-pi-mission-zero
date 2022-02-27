@@ -1,4 +1,5 @@
 ---
+title: 1 Présentation AstroPi
 hide:
   - toc
 ---
