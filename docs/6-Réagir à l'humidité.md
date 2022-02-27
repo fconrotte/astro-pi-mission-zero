@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 ## Réagir à l'humidité
 
 Tu peux combiner ton relevé d'humidité avec une image pour indiquer également l'humidité d'une manière graphique. Par exemple, tu peux afficher un océan pour une humidité élevée, et un désert pour une faible humidité :

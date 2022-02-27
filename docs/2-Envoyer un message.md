@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 ## Envoyer un message
 
 Ouvre [l'émulateur Sense HAT](https://trinket.io/mission-zero) pour le projet Mission Zero.

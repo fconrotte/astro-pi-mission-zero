@@ -1,4 +1,5 @@
-site_name: MissionZero
+site_name: AstroPi Mission Zero
 
 theme:
-    name: readthedocs
+  logo: images/astro_pi_logo.svg
+  name: material

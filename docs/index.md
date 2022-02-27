@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 ## Introduction
 
 Égaye la routine quotidienne des astronautes de la Station spatiale internationale en leur affichant un message et l'humidité relative à bord, à l’aide du Sense HAT de l’ordinateur Astro Pi.
@@ -43,7 +48,7 @@ Consultez [les directives officielles](https://astro-pi.org/media/mission-zero-g
 
 Vous devrez vous inscrire au défi Mission Zéro pour permettre à votre ou vos équipes de participer.
 
-+ Rendez-vous sur la page [de l'émulateur Trinket Mission Zero](https://trinket.io/mission-zero).
++ Rendez-vous sur la page [de l'émulateur Trinket Mission Zero](https://trinket.io/mission-zero/register).
 
 + Remplissez le formulaire et cliquez sur **Submit (Soumettre)**\*.
 

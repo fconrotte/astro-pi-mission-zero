@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 ## Ajouter de la couleur
 
 Les LED de l'Astro Pi peuvent également afficher des couleurs. Tu peux spécifier une couleur en créant une variable et en lui attribuant une valeur de couleur RGB.
