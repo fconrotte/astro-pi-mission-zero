@@ -3,8 +3,6 @@ hide:
   - toc
 ---
 
-## Envoyer un message
-
 Ouvre [l'émulateur Sense HAT](https://trinket.io/mission-zero) pour le projet Mission Zero.
 
 Tu vas constater que trois lignes de code ont été ajoutées automatiquement :

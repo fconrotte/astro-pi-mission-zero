@@ -1,10 +1,8 @@
 ---
-title: 3 Mesurer humidité
+title: 3 Mesurer l'humidité
 hide:
   - toc
 ---
-
-## Mesurer l'humidité
 
 Le capteur d'humidité de l'Astro Pi peut mesurer l'humidité de l'air qui l'entoure, c'est une fonction utile pour t'aider à collecter des données sur les conditions dans l'espace.
 

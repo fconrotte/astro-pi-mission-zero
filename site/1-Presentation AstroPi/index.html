@@ -13,7 +13,7 @@
     
     
       
-        <title>6 Réaction humidité - AstroPi Mission Zero</title>
+        <title>1 Présentation AstroPi - AstroPi Mission Zero</title>
       
     
     
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#reagir-a-lhumidite" class="md-skip">
+        <a href="#quest-ce-quun-astro-pi" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              6 Réaction humidité
+              1 Présentation AstroPi
             
           </span>
         </div>
@@ -190,11 +190,48 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../1-Qu%27est-ce%20qu%27un%20Astro%20Pi/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          1 Présentation AstroPi
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         1 Présentation AstroPi
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quest-ce-quun-astro-pi" class="md-nav__link">
+    Qu'est-ce qu'un Astro Pi ?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -222,7 +259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3-Mesurer%20l%27humidit%C3%A9/" class="md-nav__link">
+      <a href="../3-Mesurer%20humidite/" class="md-nav__link">
         3 Mesurer humidité
       </a>
     </li>
@@ -265,48 +302,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          6 Réaction humidité
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../6-Reagir%20humidite/" class="md-nav__link">
         6 Réaction humidité
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reagir-a-lhumidite" class="md-nav__link">
-    Réagir à l'humidité
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -353,8 +353,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#reagir-a-lhumidite" class="md-nav__link">
-    Réagir à l'humidité
+  <a href="#quest-ce-quun-astro-pi" class="md-nav__link">
+    Qu'est-ce qu'un Astro Pi ?
   </a>
   
 </li>
@@ -373,56 +373,24 @@
                 
 
 
-  <h1>6 Réaction humidité</h1>
+  <h1>1 Présentation AstroPi</h1>
 
-<h2 id="reagir-a-lhumidite">Réagir à l'humidité</h2>
-<p>Tu peux combiner ton relevé d'humidité avec une image pour indiquer également l'humidité d'une manière graphique. Par exemple, tu peux afficher un océan pour une humidité élevée, et un désert pour une faible humidité :</p>
-<p><img alt="Humide et sec" src="../images/wet-dry.png" /></p>
-<p>Au bas de ton programme, crée d'autres variables de couleur pour toutes les couleurs que tu souhaites utiliser dans tes images. Tu en as peut-être déjà défini certaines lors d'une étape précédente.</p>
-<pre><code>o=(255,130,0)
-b=(0,0,255)
-c=(0,150,255)
-e=(80,80,80)
-g=(0,255,0)
-y=(255,255,0)
-</code></pre>
-<p>Comme précédemment, dessine tes images en créant d'abord une liste pour chacune d'entre elles, puis en indiquant la couleur que tu veux donner aux pixels de chaque élément de la liste.</p>
-<pre><code>wet = [
-  b, b, b, b, b, b, b, b,
-  b, b, b, b, b, b, b, b,
-  b, o, b, o, o, o, b, b,
-  b, o, o, o, o, e, o, b,
-  b, o, o, o, o, o, o, b,
-  b, o, b, o, o, o, b, b,
-  b, b, b, b, b, b, b, b,
-  b, b, b, b, b, b, b, b
-]
-
-
-dry = [
-  c, c, g, g, c, c, c, c,
-  c, c, g, g, c, g, c, c,
-  g, c, g, g, c, g, c, c,
-  g, c, g, g, c, g, c, c,
-  g, g, g, g, g, g, c, c,
-  c, c, g, g, c, c, c, c,
-  y, y, y, y, y, y, y, y,
-  y, y, y, y, y, y, y, y
-]
-</code></pre>
-<p>Ajoute du code pour obtenir l'humidité :</p>
-<pre><code>humid = sense.get_humidity()
-</code></pre>
-<p>Décide maintenant quelle image tu veux afficher. Pour cet exemple, nous afficherons l'image <code>wet</code> (humide) si la lecture de l'humidité est de 40 % ou plus, et l'image <code>dry</code> (sec) si l'humidité est inférieure à 40 %.</p>
-<pre><code>humid = sense.get_humidity()
-if humid &gt;= 40:
-    sense.set_pixels(wet)
-else:
-    sense.set_pixels(dry)
-</code></pre>
-<p>Utilise le curseur d'humidité pour définir une humidité sur l'émulateur. Exécute ton programme et vérifie que l'image que tu as choisie pour cette humidité est correctement affichée.</p>
-<p>Modifie ton code pour que ton programme affiche l'humidité pour les astronautes de la manière que tu as choisie.</p>
-<p>Teste ton code avec quelques réglages d'humidité différents (à l'aide du curseur) pour t'assurer qu'il fonctionne toujours correctement. Si tu as suivi l'exemple ci-dessus, une image est-elle affichée à la fois lorsque l'humidité est réglée à une valeur inférieure à 40 % et aussi quand elle est réglée à plus de 40 % ?</p>
+<h2 id="quest-ce-quun-astro-pi">Qu'est-ce qu'un Astro Pi ?</h2>
+<p>Un Astro Pi est un ordinateur Raspberry Pi intégré dans un boîtier spécialement conçu pour les conditions spatiales. Il possède également une carte supplémentaire appelée Sense HAT, spécialement conçue pour la mission Astro Pi. Le Sense HAT est équipé d'un joystick, d'un écran LED et de capteurs permettant d'enregistrer les conditions d'éclairage, la température, l'humidité, la pression et l'orientation.</p>
+<p>Voici une unité originale Mark I Astro Pi sur la Station spatiale internationale, exécutant un code écrit par des élèves. Votre code sera peut-être exécuté sur une nouvelle version des ordinateurs Astro Pi !</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4ykbAJeGPMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen mark="crwd-mark"></iframe>
+<blockquote></blockquote>
+<p>Pour cette mission, tu utiliseras l'émulateur Sense HAT. L'émulateur est un logiciel qui simule toutes les fonctions de l'Astro Pi dans ton navigateur Web.</p>
+<p><img alt="Une capture d'écran étiquetée de l'émulateur Sense HAT avec la fenêtre de code à gauche et l'émulateur à droite." src="../images/sense-hat-emulator.png" /></p>
+<p>Il existe quelques différences entre le Sense HAT réel et celui qui est émulé :</p>
+<ul>
+<li>
+<p>Sur l'émulateur, tu peux régler toi-même la couleur de la lumière, la température, la pression et l'humidité à l'aide de curseurs, alors que le véritable Sense HAT de l'Astro Pi utilise des capteurs pour mesurer ces paramètres dans son environnement.</p>
+</li>
+<li>
+<p>Tu peux utiliser la souris pour cliquer et faire glisser le Sense HAT émulé afin de le déplacer et de le faire pivoter, simulant ainsi des changements d'orientation. Le véritable Astro Pi (et son Sense HAT) peut se déplacer dans le monde réel, et les capteurs d'orientation du Sense HAT détectent quand et comment il a bougé.</p>
+</li>
+</ul>
 
               
             </article>
@@ -436,7 +404,7 @@ else:
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../5-Afficher%20une%20image/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 5 Afficher une image" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -445,20 +413,20 @@ else:
               <span class="md-footer__direction">
                 Previous
               </span>
-              5 Afficher une image
+              Introduction
             </div>
           </div>
         </a>
       
       
         
-        <a href="../7-Soumettre%20ton%20programme/" class="md-footer__link md-footer__link--next" aria-label="Next: 7 Soumettre ton programme" rel="next">
+        <a href="../2-Envoyer%20un%20message/" class="md-footer__link md-footer__link--next" aria-label="Next: 2 Envoyer un message" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              7 Soumettre ton programme
+              2 Envoyer un message
             </div>
           </div>
           <div class="md-footer__button md-icon">
