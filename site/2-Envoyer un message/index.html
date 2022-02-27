@@ -404,11 +404,14 @@
 <h2 id="envoyer-un-message">Envoyer un message</h2>
 <p>Ouvre <a href="https://trinket.io/mission-zero">l'émulateur Sense HAT</a> pour le projet Mission Zero.</p>
 <p>Tu vas constater que trois lignes de code ont été ajoutées automatiquement :</p>
-<pre><code>from time import sleep
-from sense_hat import SenseHat
+<pre><code>from sense_hat import SenseHat
 sense = SenseHat()
 sense.set_rotation(270)
 </code></pre>
+<p>Ajoute cette ligne tout en haut, avant la première ligne</p>
+<pre><code>from time import sleep
+</code></pre>
+<p>Tu en auras besoin pour mettre ton programme en pause à certains moment.</p>
 <p><img alt="Une capture d'écran de l'émulateur Trinket Sense Hat avec trois lignes de code de démarrage affichées dans le panneau de gauche." src="../images/sense-hat-emulator.png" /></p>
 <p>Ce code se connecte à l'Astro Pi et s'assure que l'écran LED de l'Astro Pi est affiché dans le bon sens. Laisse ce code ici car tu en auras besoin.</p>
 <p>Peut-être pourrais-tu laisser un message de bienvenue aux astronautes de l'ISS qui travaillent près de l'Astro Pi ? Faisons défiler un message sur l'écran.</p>
