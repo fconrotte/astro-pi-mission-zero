@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>8 Soumettre ton programme - MissionZero</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "8 Soumettre ton programme";
+    var mkdocs_page_input_path = "8-Soumettre ton programme.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MissionZero</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../1-Introduction/">1 Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../2-Qu%27est-ce%20qu%27un%20Astro%20Pi/">2 Qu'est ce qu'un Astro Pi</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../3-Envoyer%20un%20message/">3 Envoyer un message</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../4-Mesurer%20l%27humidit%C3%A9/">4 Mesurer l'humidité</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../5-Ajouter%20de%20la%20couleur/">5 Ajouter de la couleur</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../6-Afficher%20une%20image/">6 Afficher une image</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../7-R%C3%A9agir%20%C3%A0%20l%27humidit%C3%A9/">7 Réagir à l'humidité</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">8 Soumettre ton programme</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MissionZero</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>8 Soumettre ton programme</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="soumettre-ton-programme">Soumettre ton programme</h2>
+<p>Ton code doit respecter quelques règles pour que tu puisses le soumettre et le faire exécuter dans la Station Spatiale Internationale. Si ton code les respecte, les règles situées en bas de l'<a href="https://trinket.io/mission-zero">émulateur Sense HAT</a> s'allumeront en vert lorsque tu exécuteras le programme.</p>
+<p><img alt="Une capture d'écran des pages Trinket de Mission Zero montrant le bouton de soumission et les vérifications des critères sur la gauche. Les deux premiers (&quot;lire l'humidité&quot; et &quot;utiliser les LED&quot;) sont en texte orange, celui du bas (&quot;fonctionne sans erreur&quot;) est vert " src="../images/validation.png" /></p>
+<ol>
+<li>Mesure l'humidité.</li>
+<li>Allume les LED.</li>
+<li>Vérifie que ton code s'exécute jusqu'au bout sans erreur. Tu ne dois pas inclure de boucles <code>while True</code> dans ton code car cela fera exécuter le code en continu et l'empêchera de se terminer.</li>
+<li>Teste ton code avec quelques paramètres d'humidité différents (en utilisant le curseur) pour t'assurer qu'il s'exécutera toujours correctement.</li>
+</ol>
+<p>Assure-toi également que les critères suivants sont satisfaits :</p>
+<ol>
+<li>Assure-toi que ton message pour les astronautes ne dure pas plus de 30 secondes, car c'est la durée d'exécution de ton code dans l'ISS</li>
+<li>Évite d'utiliser des méthodes nécessitant une saisie de donnée</li>
+<li>Importe uniquement les modules <code>sense_hat</code>, <code>time</code>, et <code>random</code></li>
+<li>Assure-toi de ne pas inclure de juron</li>
+</ol>
+<p>Une fois que toutes les règles sont passées au vert, tu es prêt à faire ta soumission.</p>
+<p>Saisis le code de ta classe dans la case en bas - ton enseignant ou ton mentor te dira quel est ton code.</p>
+<p>Les <strong>notes destinées aux enseignants ou aux mentors</strong> se trouvent dans l'étape <a href="https://projects.raspberrypi.org/fr-FR/projects/astro-pi-mission-zero/1">Introduction</a>.</p>
+<p>Le nom de ton enseignant va s'afficher. Si c'est le bon nom, clique sur le bouton vert <strong>Continue to form</strong> (Continuer vers le formulaire).</p>
+<p><img alt="Continuer vers le formulaire" src="../images/continue-to-form.png" /></p>
+<p>Donne le nom de ton équipe et les noms des membres de l'équipe. Ils seront imprimés sur le certificat une fois que ton code sera exécuté dans l'espace, alors assure-toi de les épeler correctement !</p>
+<p>Appuie sur le bouton <strong>Submit</strong> (Soumettre) pour entrer ton code. Ton enseignant ou ton mentor recevra un e-mail de confirmation pour ton inscription.</p>
+<p>Si tu le souhaites, tu peux partager le lien vers ton code sur les réseaux sociaux pour dire aux gens que le code que tu as écrit sera exécuté dans l'espace !</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../7-R%C3%A9agir%20%C3%A0%20l%27humidit%C3%A9/" class="btn btn-neutral" title="7 Réagir à l'humidité"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../7-R%C3%A9agir%20%C3%A0%20l%27humidit%C3%A9/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

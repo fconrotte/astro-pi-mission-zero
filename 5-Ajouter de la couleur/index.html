@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>5 Ajouter de la couleur - MissionZero</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "5 Ajouter de la couleur";
+    var mkdocs_page_input_path = "5-Ajouter de la couleur.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MissionZero</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../1-Introduction/">1 Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../2-Qu%27est-ce%20qu%27un%20Astro%20Pi/">2 Qu'est ce qu'un Astro Pi</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../3-Envoyer%20un%20message/">3 Envoyer un message</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../4-Mesurer%20l%27humidit%C3%A9/">4 Mesurer l'humidité</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">5 Ajouter de la couleur</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#representer-des-couleurs-avec-des-nombres">Représenter des couleurs avec des nombres</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../6-Afficher%20une%20image/">6 Afficher une image</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../7-R%C3%A9agir%20%C3%A0%20l%27humidit%C3%A9/">7 Réagir à l'humidité</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../8-Soumettre%20ton%20programme/">8 Soumettre ton programme</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MissionZero</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>5 Ajouter de la couleur</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="ajouter-de-la-couleur">Ajouter de la couleur</h2>
+<p>Les LED de l'Astro Pi peuvent également afficher des couleurs. Tu peux spécifier une couleur en créant une variable et en lui attribuant une valeur de couleur RGB.</p>
+<h3 id="representer-des-couleurs-avec-des-nombres">Représenter des couleurs avec des nombres</h3>
+<p>La couleur d’un objet dépend de la couleur de la lumière qu’il réfléchit ou émet. La lumière peut avoir différentes longueurs d’onde et la couleur de la lumière dépend de la longueur d’onde. La couleur de la lumière en fonction de sa longueur d’onde peut être vue dans le diagramme ci-dessous. Tu pourrais reconnaître cela comme les couleurs de l’arc-en-ciel.</p>
+<p><img alt="linear-visible-spectrum" src="https://projects-static.raspberrypi.org/projects/generic-theory-colours/c6ad3485a9fbca18c26d7f87df013d41aa6bcb19/fr-FR/images/linear-visible-spectrum.png" /></p>
+<p>Les humains voient la couleur grâce à des cellules spéciales dans nos yeux. Ces cellules sont appelées cônes. Nous avons trois types de cellules de cône et chaque type détecte soit une lumière rouge, bleue ou verte. Par conséquent, toutes les couleurs que nous voyons ne sont que des mélanges de couleurs rouge, bleu et vert.</p>
+<p><img alt="additive-colour-mixing" src="https://projects-static.raspberrypi.org/projects/generic-theory-colours/c6ad3485a9fbca18c26d7f87df013d41aa6bcb19/fr-FR/images/additive-colour-mixing.png" /></p>
+<p>Dans le mélange de couleurs additif, trois couleurs (rouge, vert et bleu) sont utilisées pour créer d’autres couleurs. Dans l’image ci-dessus, il y a trois spots de même luminosité, un pour chaque couleur. En l’absence de toute couleur, le résultat est noir. Si les trois couleurs sont mélangées, le résultat est blanc. Lorsque rouge et vert se combinent, le résultat est jaune. Lorsque rouge et bleu se combinent, le résultat est magenta. Lorsque bleu et vert se combinent, le résultat est cyan. Il est possible de faire encore plus de couleurs en faisant varier la luminosité des trois couleurs originales utilisées.</p>
+<p>Les ordinateurs stockent tout en tant que 1 et 0. Ces 1 et 0 sont souvent organisés en ensembles de 8, appelés octets.</p>
+<p>Un seul octet peut représenter n’importe quel nombre de 0 à 255.</p>
+<p>Lorsque nous voulons représenter une couleur dans un programme informatique, nous pouvons le faire en définissant les quantités de rouge, de bleu et de vert qui composent cette couleur. Ces quantités sont généralement stockés sous forme d’ un seul octet et donc comme un nombre compris entre 0 et 255.</p>
+<p>Voici un tableau montrant certaines valeurs de couleur:</p>
+<p><img alt="tableau de couleurs" src="../images/colour_array.png" /></p>
+<p>Crée une variable qui servira à stocker la couleur que tu as choisi. Par exemple, si tu as choisi la couleur rouge, tu vas écrire cette ligne de code :</p>
+<pre><code>red = (255,0,0)
+</code></pre>
+<p>Tu peux maintenant afficher ton texte dans la couleur de ton choix ! Pour indiquer au programme d'utiliser la couleur que tu as créée, ajoute le paramètre <code>text_colour</code> (couleur du texte) à la ligne de code qui affiche ton texte :</p>
+<pre><code>red = (255,0,0)
+sense.show_message("Astro Pi", text_colour=red)
+</code></pre>
+<p><img alt="L'émulateur Trinket Sense HAT exécutant un exemple de programme qui fait défiler le texte \&quot;Astro Pi\&quot; travers la matrice LED en utilisant des lettres rouges" src="../images/M0_2.gif" /></p>
+<p>Tu peux également modifier la couleur d'arrière-plan de l'écran. Choisis une autre couleur et crée une autre variable pour cette couleur. Pour indiquer au programme d'utiliser la couleur d'arrière-plan que tu as choisie, ajoute le paramètre <code>back_colour</code> (couleur de l'arrière-plan) à ton code :</p>
+<pre><code>red = (255,0,0)
+green = (0,255,0)
+sense.show_message("Astro Pi", text_colour=red, back_colour=green)
+</code></pre>
+<p>Modifie le texte et la couleur du message de bienvenue - quel message veux-tu envoyer aux astronautes à bord de l'ISS ?</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../6-Afficher%20une%20image/" class="btn btn-neutral float-right" title="6 Afficher une image">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../4-Mesurer%20l%27humidit%C3%A9/" class="btn btn-neutral" title="4 Mesurer l'humidité"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../4-Mesurer%20l%27humidit%C3%A9/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../6-Afficher%20une%20image/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
