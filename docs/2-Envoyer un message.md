@@ -9,10 +9,15 @@ Ouvre [l'émulateur Sense HAT](https://trinket.io/mission-zero) pour le projet M
 
 Tu vas constater que trois lignes de code ont été ajoutées automatiquement :
 
-    from time import sleep
     from sense_hat import SenseHat
     sense = SenseHat()
     sense.set_rotation(270)
+
+Ajoute cette ligne tout en haut, avant la première ligne
+
+    from time import sleep
+
+Tu en auras besoin pour mettre ton programme en pause à certains moment.
 
 ![Une capture d'écran de l'émulateur Trinket Sense Hat avec trois lignes de code de démarrage affichées dans le panneau de gauche.](images/sense-hat-emulator.png)
 

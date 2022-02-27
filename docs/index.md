@@ -44,11 +44,9 @@ Ce projet couvre des éléments des sections suivantes du [Raspberry Pi Digital 
 
 Cette activité peut être réalisée en 1h30. Organisez vos élèves en équipes de deux à quatre personnes et laissez-nous les guider dans l'écriture d'un court programme Python pour afficher un message personnel et l'humidité relative sur l'Astro Pi.
 
-Consultez [les directives officielles](https://astro-pi.org/media/mission-zero-guidelines/Astro_Pi_Mission_Zero_Guidelines_2021_22-fr.pdf) pour Mission Zero.
-
 Vous devrez vous inscrire au défi Mission Zéro pour permettre à votre ou vos équipes de participer.
 
-+ Rendez-vous sur la page [de l'émulateur Trinket Mission Zero](https://trinket.io/mission-zero/register).
++ Rendez-vous sur [la page d'inscription Mission Zero](https://trinket.io/mission-zero/register).
 
 + Remplissez le formulaire et cliquez sur **Submit (Soumettre)**\*.
 
@@ -66,10 +64,10 @@ Les champs du formulaire incluent :
 
 * Dans quelle langue avez-vous consulté les directives de Mission Zero ?
 
-Un compte Trinket sera créé pour vous (si vous n'en avez pas déjà un, ou si vous n'êtes pas connecté). Vous pouvez créer un compte par adresse e-mail. Chaque compte a son propre **code de salle de classe**, et vous devez donner ce code à votre ou vos équipes quand elles sont prêtes à soumettre leurs programmes.
+Un compte Trinket sera créé pour vous (si vous n'en avez pas déjà un, ou si vous n'êtes pas connecté).
+
+Vous recevrez votre propre **code de salle de classe**, et vous devez donner ce code à votre ou vos équipes quand elles sont prêtes à soumettre leurs programmes.
 
 Affichez votre code de salle de classe quelque part où il sera visible, par exemple sur un tableau blanc ou en utilisant un projecteur, et commencez l'activité.
 
  Nous avons créé un [document imprimable de deux pages](http://rpf.io/mz-printout) qui couvre les points clés de Mission Zéro et que les élèves et les jeunes peuvent utiliser avec ce projet en ligne.
-
-![Pixel de suivi](https://code.org/api/hour/begin_raspberrypi_astropi.png)
